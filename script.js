@@ -26,10 +26,10 @@ const compareGuesses = (currentHumanGuess, computerGuess, target) => {
         return false
     }
 
-    const humanDistance = Math.abs(target - currentHumanGuess)
-    const computerDistance = Math.abs(target - computerGuess)
+    // const humanDistance = Math.abs(target - currentHumanGuess)
+    // const computerDistance = Math.abs(target - computerGuess)
 
-    if (humanDistance <= computerDistance) {
+    if (Math.abs(target - currentHumanGuess) <= Math.abs(target - computerGuess) {
         return true
     } else {
         return false
